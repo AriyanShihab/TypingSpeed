@@ -10,6 +10,13 @@ body {
   background-position: left top;
   font-family: "Zilla Slab", serif;
 }
+/* from Ariyan Shihab */
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(50%, 50%);
+}
 
 .box-container {
   width: 70%;
@@ -63,7 +70,7 @@ body {
 }
 #result {
   position: fixed;
-  top: 10%; 
+  top: 10%;
   left: 10%;
   transform: translate(-50%, -50%);
   height: 250px;
@@ -75,7 +82,7 @@ body {
   text-align: center;
   padding: 2rem;
 }
-#show-time{
+#show-time {
   text-align: center;
   color: white;
   margin: 10px 0;
@@ -178,7 +185,12 @@ button {
   height: 100vh;
   width: 100%;
   position: fixed;
-  top: 0;
+  top: 50%;
+  left: 40vw;
+}
+.closeButton {
+  max-width: 90%;
+  margin: auto;
 }
 
 @media only screen and (max-width: 700px) {
@@ -188,5 +200,9 @@ button {
   }
   .card {
     flex-direction: column;
+  }
+  #result {
+    max-width: 90vw;
+    margin: auto;
   }
 }

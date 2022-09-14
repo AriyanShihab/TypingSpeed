@@ -77,6 +77,7 @@ const gameOver = () => {
   resultModal.innerHTML = "";
   resultModal.classList.toggle("hidden");
   modalBackground.classList.toggle("hidden");
+
   // clear user text
   display.innerHTML = "";
   // make it inactive
@@ -86,7 +87,7 @@ const gameOver = () => {
     <h1>Finished!</h1>
     <p>You took: <span class="bold">${timeTaken}</span> seconds</p>
     <p>You made <span class="bold red">${errorCount}</span> mistakes</p>
-    <button onclick="closeModal()">Close</button>
+    <button class="closeButton" onclick="closeModal()">Close</button>
   `;
 
   addHistory(questionText, timeTaken, errorCount);
@@ -145,3 +146,13 @@ setInterval(() => {
     startTime ? timeSpent : 0
   } seconds`;
 }, 1000);
+
+/*
+
+
+"A quick brown fox jumps over the lazy dog.",
+  "Good programmers write code that humans can understand.",
+  "First, think about the problem. Then, write the code.",
+  "There is no shortcut other than hard work.",
+  "Perfection is achieved not when there is nothing more to add, but rather when there is nothing more to take away."
+ */
