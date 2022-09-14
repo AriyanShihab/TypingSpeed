@@ -22,7 +22,7 @@ compeulsory:
 for bonus:
 
     1: count the errors and display in the result popup; done
-    2: make at-least 10 github commit
+    2: make at-least 10 github commit; done
     3: create a  blog.html file and answer the given questions bellow in that file;
      questions:
         a: difarence between localStorage and Session Storage
