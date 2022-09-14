@@ -10,7 +10,7 @@ submission dedline for 50 marks
 
 compelsury:
 
-    1: fix the start button;
+    1: fix the start button; done
     2: display count down ( just use bactice in template string);
     3: remove the overlay after the countdown   hasbeen zero;
     4: place the summary modal middle of screen;
