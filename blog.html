@@ -4,9 +4,146 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!-- tailwind  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind config -->
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font setting -->
+    <style>
+      * {
+        font-family: "Nunito", sans-serif;
+      }
+    </style>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+
+    <title>Js Before React</title>
   </head>
-  <body>
-    <h1>Hello</h1>
+  <body class="bg-gradient-to-t from-violet-200 to-fuchsia-100">
+    <!-- banner -->
+    <section class="min-h-[50vh] p-4 flex justify-center items-center">
+      <div
+        class="container md:w-3/4 mx-auto p-4 py-10 rounded bg-white/[0.4] backdrop-blur-sm my-10 border border-opacity-30 border-fuchsia-500"
+      >
+        <h1
+          class="font-black md:text-6xl text-4xl text-gray-800 my-3 text-center"
+        >
+          <span class="text-fuchsia-500">Four</span> Questions Of
+          <span class="text-fuchsia-500">JavaScript</span>
+        </h1>
+      </div>
+    </section>
+    <section class="md:w-3/4 mx-auto p-4">
+      <!-- storage -->
+      <div>
+        <h2 class="text-4xl font-black mb-4">
+          Difference Between Session Storage and local Storage scope in
+          JavaScript
+        </h2>
+        <p class="font-semibold text-[20px]">
+          in JavaScript local storage and session storage are almost same kind
+          of thing but there are some difference! before we discuss about the
+          difference let's say what are them! <br />
+          local storage and session storage both are used for store some data on
+          the browser or client side for later usecase, since both are used to
+          store data on the browser but they had some fundamental difference.
+          let see what are the difference. <br />
+          the data stored in the session storage are cleared whenever the user
+          close that particular tab or window of the browser!
+        </p>
+        <img
+          class="mx-auto rounded-lg shadow-lg my-4"
+          src="./images/storage.png"
+          alt=""
+        />
+        <p class="font-semibold text-[20px] mb-10">
+          on the other hand the data were stored in the local storage they are
+          never expire! another fundamental difference between then is the
+          capacity of the bandwidth. in local storage we can store up to 10 MB
+          of dada and in session storage we can store only 5 MB of data we can
+          access local storage data from any window but we cannot access the
+          session storage data without the current tab
+        </p>
+      </div>
+
+      <!-- scope -->
+      <div>
+        <h2 class="text-4xl font-black mb-4">
+          Difference Between Global scope and local scope in JavaScript
+        </h2>
+        <p class="font-semibold text-[20px]">
+          before we discuss about the difference between global and local scope
+          in JavaScript we should discuss about the what is scope in JavaScript,
+          in JavaScript the scope also known as lexical scope are nothing but
+          just barricade of accessing the JavaScript variable we declared.<br />
+          it was just and top level overview. to see more details about scope we
+          can demonstrate using a code block!
+        </p>
+        <img
+          class="mx-auto rounded-lg shadow-lg my-4"
+          src="./images/scope.png"
+          alt=""
+        />
+        <p class="font-semibold text-[20px]">
+          global scope are basically the area of our JavaScript file outside of
+          any given block! that means if we declare any variable in the Global
+          scope we can access them from anywhere in that particular JavaScript
+          file! on the other hand block scope or local scope are nothing but
+          just a pair of {}, if we declare any variable using es6 to latest
+          keyword let and const inside a block a local scope we cannot access
+          them from outside of that block!
+        </p>
+      </div>
+
+      <!-- undifnied -->
+      <div class="mt-8">
+        <h2 class="text-4xl font-black mb-4">
+          Tell me some ways of getting undifined value
+        </h2>
+        <p class="font-semibold text-[20px]">
+          in JavaScript we can get undefined in multiple ways! here is the list
+          of some of the most common use case for getting undefined value <br />
+          when you try to access a value of the variable that, the variable has
+          been declared but the value has not with assigned
+          <span class="text-fuchsia-500"
+            >(if we did not declare the variable we will get reference error but
+            if you declare the variable at do not assign null value then we will
+            get undefined)
+          </span>
+        </p>
+        <img
+          class="mx-auto rounded-lg shadow-lg my-4"
+          src="./images/undefined.png"
+          alt=""
+        />
+        <p class="font-semibold text-[20px]">
+          when we try to access a property of an object that never exist are try
+          to access an element of an array that never exist! In JavaScript, we
+          can explicitly set a variable value to undefined too!
+          <span class="text-fuchsia-500"
+            >remember undefined is a data type and a valid value in JavaScript
+          </span>
+          also there are some other ways to get undefined in javascript!
+        </p>
+      </div>
+    </section>
+
+    <!-- text list -->
   </body>
 </html>

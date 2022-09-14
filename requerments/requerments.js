@@ -28,6 +28,7 @@ for bonus:
         a: difarence between localStorage and Session Storage
         b: dif between global scope and local scope
         3: tell me some ways of getting undifined value
+        4: event loop
 
 
 what to submit:
@@ -38,3 +39,10 @@ b: live website deployed on netlify
 
 
 */
+// localStorage
+localStorage.setItem("timeLimit", "Bangladesh");
+localStorage.getItem("timeLimit");
+
+// sessionStorage
+sessionStorage.setItem("timeLimit", "Until Browser window closed");
+sessionStorage.getItem("timeLimit");
