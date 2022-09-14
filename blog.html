@@ -39,30 +39,38 @@
     <!-- banner -->
     <section class="min-h-[50vh] p-4 flex justify-center items-center">
       <div
-        class="container md:w-3/4 mx-auto p-4 py-10 rounded bg-white/[0.4] backdrop-blur-sm my-10 border border-opacity-30 border-fuchsia-500"
+        class="container md:w-3/4 mx-auto p-4 py-10 rounded bg-white/[0.4] backdrop-blur-sm my-10 border border-opacity-30 border-fuchsia-500 text-center"
       >
         <h1
-          class="font-black md:text-6xl text-4xl text-gray-800 my-3 text-center"
+          class="font-black md:text-6xl text-4xl text-gray-800 my-3 text-center mb-5"
         >
           <span class="text-fuchsia-500">Four</span> Questions Of
           <span class="text-fuchsia-500">JavaScript</span>
         </h1>
+        <a
+          class="px-4 py-3 rounded bg-fuchsia-500 text-white font-bold text-[20px]"
+          href="./index.html"
+          >Back To Home Page</a
+        >
       </div>
     </section>
     <section class="md:w-3/4 mx-auto p-4">
       <!-- storage -->
       <div>
         <h2 class="text-4xl font-black mb-4">
-          Difference Between Session Storage and local Storage scope in
-          JavaScript
+          <span class="text-fuchsia-500">01:</span> Difference Between Session
+          Storage and local Storage scope in JavaScript
         </h2>
         <p class="font-semibold text-[20px]">
           in JavaScript local storage and session storage are almost same kind
           of thing but there are some difference! before we discuss about the
           difference let's say what are them! <br />
-          local storage and session storage both are used for store some data on
-          the browser or client side for later usecase, since both are used to
-          store data on the browser but they had some fundamental difference.
+          local storage and session storage
+          <span class="text-fuchsia-500"
+            >both are used for store some data on the browser or client side for
+            later usecase, since both are used to store data on the browser but
+            they had some fundamental difference.</span
+          >
           let see what are the difference. <br />
           the data stored in the session storage are cleared whenever the user
           close that particular tab or window of the browser!
@@ -76,16 +84,21 @@
           on the other hand the data were stored in the local storage they are
           never expire! another fundamental difference between then is the
           capacity of the bandwidth. in local storage we can store up to 10 MB
-          of dada and in session storage we can store only 5 MB of data we can
-          access local storage data from any window but we cannot access the
-          session storage data without the current tab
+          of dada and in session storage we can store only 5 MB of data.
+          <span class="text-fuchsia-500"
+            >we can access local storage data from any window but we cannot
+            access the session storage data without the current tab</span
+          >
+          we can access local storage data from any window but we cannot access
+          the session storage data without the current tab
         </p>
       </div>
 
       <!-- scope -->
       <div>
         <h2 class="text-4xl font-black mb-4">
-          Difference Between Global scope and local scope in JavaScript
+          <span class="text-fuchsia-500">02:</span> Difference Between Global
+          scope and local scope in JavaScript
         </h2>
         <p class="font-semibold text-[20px]">
           before we discuss about the difference between global and local scope
@@ -102,19 +115,26 @@
         />
         <p class="font-semibold text-[20px]">
           global scope are basically the area of our JavaScript file outside of
-          any given block! that means if we declare any variable in the Global
-          scope we can access them from anywhere in that particular JavaScript
-          file! on the other hand block scope or local scope are nothing but
-          just a pair of {}, if we declare any variable using es6 to latest
-          keyword let and const inside a block a local scope we cannot access
-          them from outside of that block!
+          any given block!
+          <span class="text-fuchsia-500"
+            ><span class="text-fuchsia-500"
+              >that means if we declare any variable in the Global scope we can
+              access them from anywhere in that particular JavaScript
+              file!</span
+            ></span
+          >
+          on the other hand block scope or local scope are nothing but just a
+          pair of {}, if we declare any variable using es6 to latest keyword let
+          and const inside a block a local scope we cannot access them from
+          outside of that block!
         </p>
       </div>
 
       <!-- undifnied -->
       <div class="mt-8">
         <h2 class="text-4xl font-black mb-4">
-          Tell me some ways of getting undifined value
+          <span class="text-fuchsia-500">03:</span> Tell me some ways of getting
+          undifined value
         </h2>
         <p class="font-semibold text-[20px]">
           in JavaScript we can get undefined in multiple ways! here is the list
@@ -142,8 +162,36 @@
           also there are some other ways to get undefined in javascript!
         </p>
       </div>
+      <!-- event loop  -->
+      <div class="mt-8">
+        <h2 class="text-4xl font-black mb-4">
+          <span class="text-fuchsia-500">04:</span> What is Eevent Lopp in
+          JavaScript
+        </h2>
+        <p class="font-semibold text-[20px]">
+          we all know that JavaScript is a single threaded programming language
+          then how does JavaScript handle its asynchronous programming
+          <span class="text-fuchsia-500"
+            >JavaScript and do it because of event loop! event loop is nothing
+            but a mechanism to stublished communication of call stack and the
+            even que.</span
+          >
+          every asynchronous code with write JavaScript give it to web Api's.
+          When JS engine complete it synchronous code execution, the event que
+          send and code block to the callstack of JS engine. This process will
+          reported until the event que is empty!
+        </p>
+        <img
+          class="mx-auto rounded-lg shadow-lg my-4"
+          src="./images/event loop.png"
+          alt=""
+        />
+      </div>
     </section>
-
-    <!-- text list -->
+    <footer
+      class="text-center font-black text-fuchsia-500 my-4 border-t-2 pt-3"
+    >
+      <p>Develop by ariyan Shihab</p>
+    </footer>
   </body>
 </html>
