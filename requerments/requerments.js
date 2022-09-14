@@ -16,7 +16,7 @@ compelsury:
     4: place the summary modal middle of screen; done
     5: in result section: done
         in lerger divice the resul will be in the 3 column and in mobile divice it will be in single column
-    6: time has to in intiger. ( nothing after  the decimal, not even the decimal)
+    6: time has to in intiger. ( nothing after  the decimal, not even the decimal) done
 
 
 for bonous:
