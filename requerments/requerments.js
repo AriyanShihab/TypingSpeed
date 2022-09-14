@@ -8,7 +8,7 @@ submission dedline for 50 marks
 
 
 
-compelsury:
+compeulsory:
 
     1: fix the start button; done
     2: display count down ( just use bactice in template string); done
@@ -19,9 +19,9 @@ compelsury:
     6: time has to in intiger. ( nothing after  the decimal, not even the decimal) done
 
 
-for bonous:
+for bonus:
 
-    1: count the errors and display in the result popup
+    1: count the errors and display in the result popup; done
     2: make at-least 10 github commit
     3: create a  blog.html file and answer the given questions bellow in that file;
      questions:
