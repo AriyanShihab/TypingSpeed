@@ -197,6 +197,9 @@ button {
   max-width: 90%;
   margin: auto;
 }
+.mb-4 {
+  margin-bottom: 16px;
+}
 
 @media only screen and (max-width: 700px) {
   .box-container {
