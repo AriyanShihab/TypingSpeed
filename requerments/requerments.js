@@ -13,7 +13,7 @@ compelsury:
     1: fix the start button; done
     2: display count down ( just use bactice in template string); done
     3: remove the overlay after the countdown   hasbeen zero; done
-    4: place the summary modal middle of screen;
+    4: place the summary modal middle of screen; done
     5: in result section:
         in lerger divice the resul will be in the 3 column and in mobile divice it will be in single column
     6: time has to in intiger. ( nothing after  the decimal, not even the decimal)
